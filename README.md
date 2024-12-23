@@ -16,10 +16,6 @@ An **Employee Management System** developed in Java with MySQL integration, feat
 
 GitHub Repository: [Employee Management System](https://github.com/heysouravroy/employee_management_system.git)
 
-## Screenshots
-
-*(Add screenshots of your application here for a visual overview.)*
-
 ## Table Structure
 
 The application uses a MySQL `employee` table with the following structure:
