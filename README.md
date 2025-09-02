@@ -1,100 +1,65 @@
-## Employee Management System
+# Employee Management System
 
-An **Employee Management System** developed in Java with MySQL integration, featuring a user-friendly interface built using Java Swing. This project simplifies employee record management with essential functionalities like adding, removing, and updating employee details.
+A **Java-based desktop application** for managing employee records, built with **Java Swing** for the user interface and **MySQL** for database management. This project demonstrates full-stack development with Java, integrating front-end design, back-end logic, and persistent storage.
 
-## Features
+## 📌 Features
 
-- **Add Employee**: Add new employee records with details such as name, contact, designation, and more.
-- **Remove Employee**: Remove employee records securely.
-- **Update Employee Details**: Modify existing employee information.
-- **View Employees**: Display a list of all employees in the database.
-- **Database Integration**: Uses MySQL for data storage and retrieval.
-- **Secure Operations**: Prevents SQL injection by using PreparedStatements for database queries.
-- **User-Friendly Interface**: Built with Java Swing for a clean and intuitive UI.
+* Add, update, delete, and view employee details.
+* Store and manage employee data in a **MySQL database**.
+* GUI built with **Java Swing** for user-friendly interaction.
+* Calendar/date-picker support (via JCalendar library).
+* Input validation for reliable data management.
 
-## Repository
+## 🛠️ Tech Stack
 
-GitHub Repository: [Employee Management System](https://github.com/heysouravroy/employee_management_system.git)
+* **Language:** Java
+* **Database:** MySQL
+* **Libraries/Dependencies:**
 
-## Table Structure
+  * `mysql-connector-java` (for DB connectivity)
+  * `jcalendar` (for date selection)
 
-The application uses a MySQL `employee` table with the following structure:
+## 🚀 How to Run
 
-| Column Name | Data Type       | Attributes                  |
-|-------------|-----------------|-----------------------------|
-| empId       | INT            | Primary Key, Auto Increment |
-| name        | VARCHAR(40)    | NOT NULL                    |
-| fname       | VARCHAR(40)    |                             |
-| dob         | DATE           |                             |
-| salary      | DECIMAL(10, 2) |                             |
-| address     | VARCHAR(100)   |                             |
-| phone       | VARCHAR(15)    |                             |
-| email       | VARCHAR(50)    |                             |
-| designation | VARCHAR(40)    |                             |
-| aadhar      | VARCHAR(12)    | UNIQUE                      |
+1. Clone the repository:
 
-## Prerequisites
-
-Before running this project, ensure you have the following:
-
-- **Java Development Kit (JDK)** 8 or higher.
-- **MySQL Server** installed and running.
-- MySQL JDBC Driver (`mysql-connector-java.jar`) added to your project.
-- Integrated Development Environment (IDE) such as IntelliJ IDEA, Eclipse, or NetBeans.
-
-## Setup Instructions
-
-1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/heysouravroy/employee_management_system.git
+   git clone https://github.com/your-username/employee_management_system.git
    cd employee_management_system
    ```
 
-2. **Configure the Database**:
-   - Create a database in MySQL:
-     ```sql
-     CREATE DATABASE EmployeeManagement;
-     ```
-   - Use the `employee` table structure mentioned above.
-   - Insert sample data if necessary.
+2. Import the project into your IDE (IntelliJ IDEA / Eclipse).
 
-3. **Update Database Credentials**:
-   - Open the `DatabaseConnection.java` file.
-   - Update the following variables:
-     ```java
-     private static final String DB_URL = "jdbc:mysql://localhost:3306/EmployeeManagement";
-     private static final String DB_USER = "your_username";
-     private static final String DB_PASSWORD = "your_password";
-     ```
+3. Import the database:
 
-4. **Run the Application**:
-   - Compile and run the `Main.java` file in your IDE.
+   * Create a MySQL database (e.g., `ems_db`).
+   * Import the provided SQL schema if included.
 
-## Usage
+4. Add required JAR files (in `lib/`):
 
-1. Launch the application.
-2. Use the menu to add, remove, update, or view employee records.
-3. Ensure all fields are filled correctly to avoid validation errors.
+   * `mysql-connector-java-8.x.jar`
+   * `jcalendar-x.x.x.jar`
 
-## Technologies Used
+5. Run the application:
 
-- **Java**: Core programming language for development.
-- **Java Swing**: GUI framework for building the user interface.
-- **MySQL**: Database for storing employee records.
-- **JDBC**: To connect and interact with the database.
+   ```bash
+   java -jar employee_management_system.jar
+   ```
 
-## Contributing
+## 📂 Project Structure
 
-Contributions are welcome! If you would like to add new features or fix bugs, please fork the repository and submit a pull request.
+* `employee/management/system` → Source code (Java classes).
+* `icons/` → Icons and images for the GUI.
+* `settings.json` → Configuration (if applicable).
+* `.jar files` → External libraries (MySQL Connector, JCalendar).
 
-## License
+## 🔮 Future Enhancements
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+* Add user authentication & role-based access.
+* Generate reports (PDF/Excel export).
+* Cloud database support for remote access.
+* Improved UI with modern frameworks (JavaFX).
 
-## Contact
+## 📄 License
 
-For queries or feedback, feel free to contact me at [heysouravro@icloud.com](mailto:heysouravro@icloud.com).
-
----
-⭐ If you found this project helpful, give it a star!
-```
+This project is licensed under the MIT License.
